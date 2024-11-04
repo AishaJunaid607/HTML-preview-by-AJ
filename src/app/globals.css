@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Tailwind CSS base styles, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Basic styling for background and text */
+body {
+  background-color: rgb(199, 145, 201);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Background and text color customizations */
+.bg-background {
+  background-color: rgb(253, 238, 253)
+}
+
+.text-foreground {
+  @apply text-gray-900;
+}
+
+.bg-card {
+  background-color: rgb(226, 205, 245)
+}
+
+.border-input {
+  background-color: rgb(246, 233, 248)
+}
+
+.text-muted-foreground {
+  @apply text-gray-500;
+}
+
+/* Style for the HTML preview box */
+.dangerouslySetInnerHTML > div {
+  @apply whitespace-pre-line break-words;
+}
+
+/* Button styling */
+button {
+  @apply px-4 py-2 font-medium rounded-md transition-colors duration-150 ease-in-out bg-blue-500 text-white;
+}
+
+button:hover {
+  @apply bg-blue-600;
+}
+
+/* Center the component vertically and horizontally */
+.flex-center {
+  @apply flex items-center justify-center h-screen;
+}
